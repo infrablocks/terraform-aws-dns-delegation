@@ -1,0 +1,10 @@
+---
+region: 'eu-west-2'
+
+component: 'test'
+
+work_directory: 'build'
+configuration_directory: "%{hiera('work_directory')}/%{hiera('source_directory')}"
+
+parent_domain_name: "tobyclemson.co.uk"
+delegated_domain_name: "%{hiera('deployment_identifier')}.%{hiera('parent_domain_name')}"
