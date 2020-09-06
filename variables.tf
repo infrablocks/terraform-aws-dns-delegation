@@ -13,13 +13,13 @@ variable "parent_private_zone_id" {
 variable "delegated_public_zone_name_servers" {
   type = list(string)
   description = "The name servers of the public hosted zone hosting the delegated domain name. Only required when include_public_delegation_record is \"yes\"."
-  default = ""
+  default = []
 }
 
 variable "delegated_private_zone_name_servers" {
   type = list(string)
   description = "The name servers of the private hosted zone hosting the delegated domain name. Only required when include_private_delegation_record is \"yes\"."
-  default = ""
+  default = []
 }
 
 variable "delegated_domain_name" {
