@@ -5,3 +5,6 @@ vars:
   region: "%{hiera('region')}"
 
   delegated_domain_name: "%{hiera('delegated_domain_name')}"
+
+  include_public_delegation_record: "%{hiera('include_public_delegation_record')}"
+  include_private_delegation_record: "%{hiera('include_private_delegation_record')}"

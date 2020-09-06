@@ -28,3 +28,15 @@ variable "ttl" {
   default = 172800
   description = "The TTL of the created records."
 }
+
+variable "include_public_delegation_record" {
+  type = string
+  default = "yes"
+  description = "Whether or not to create a delegation record in the public hosted zone (\"yes\" or \"no\"). Defaults to \"yes\"."
+}
+
+variable "include_private_delegation_record" {
+  type = string
+  default = "yes"
+  description = "Whether or not to create a delegation record in the private hosted zone (\"yes\" or \"no\"). Defaults to \"yes\"."
+}

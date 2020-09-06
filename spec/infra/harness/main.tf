@@ -16,4 +16,7 @@ module "dns_delegation" {
   delegated_private_zone_name_servers = data.terraform_remote_state.prerequisites.outputs.delegated_private_zone_name_servers
 
   delegated_domain_name = var.delegated_domain_name
+
+  include_public_delegation_record = var.include_public_delegation_record
+  include_private_delegation_record = var.include_private_delegation_record
 }

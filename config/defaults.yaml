@@ -8,3 +8,6 @@ configuration_directory: "%{hiera('work_directory')}/%{hiera('source_directory')
 
 parent_domain_name: "tobyclemson.co.uk"
 delegated_domain_name: "%{hiera('deployment_identifier')}.%{hiera('parent_domain_name')}"
+
+include_public_delegation_record: "yes"
+include_private_delegation_record: "yes"
