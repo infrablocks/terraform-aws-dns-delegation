@@ -7,10 +7,10 @@ describe 'delegation records' do
   let(:parent_private_zone_id) { output_for(:prerequisites, 'parent_private_zone_id') }
 
   let(:delegated_public_zone_name_servers) {
-    output_for(:prerequisites, 'delegated_public_zone_name_servers', parse: true)
+    output_for(:prerequisites, 'delegated_public_zone_name_servers')
   }
   let(:delegated_private_zone_name_servers) {
-    output_for(:prerequisites, 'delegated_private_zone_name_servers', parse: true)
+    output_for(:prerequisites, 'delegated_private_zone_name_servers')
   }
 
   describe 'public hosted zone' do
