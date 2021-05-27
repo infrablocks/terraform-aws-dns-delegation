@@ -23,6 +23,10 @@ module "dns_delegation" {
 }
 ```
 
+See the 
+[Terraform registry entry](https://registry.terraform.io/modules/infrablocks/dns-delegation/aws/latest) 
+for more details.
+
 ### Inputs
 
 | Name                  | Description                                      | Default | Required |
@@ -32,6 +36,11 @@ module "dns_delegation" {
 
 | Name | Description |
 |------|-------------|
+
+### Compatibility
+
+This module is compatible with Terraform versions greater than or equal to 
+Terraform 0.14.
 
 Development
 -----------
