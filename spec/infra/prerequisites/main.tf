@@ -4,7 +4,7 @@ data "aws_vpc" "default" {
 
 module "parent_dns_zones" {
   source = "infrablocks/dns-zones/aws"
-  version = "0.5.0"
+  version = "1.0.0"
 
   domain_name = var.parent_domain_name
   private_domain_name = var.parent_domain_name
@@ -15,7 +15,7 @@ module "parent_dns_zones" {
 
 module "delegated_dns_zones" {
   source = "infrablocks/dns-zones/aws"
-  version = "0.5.0"
+  version = "1.0.0"
 
   domain_name = var.delegated_domain_name
   private_domain_name = var.delegated_domain_name
