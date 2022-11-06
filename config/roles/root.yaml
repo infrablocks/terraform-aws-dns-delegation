@@ -1,0 +1,7 @@
+---
+configuration_directory: "%{cwd}/spec/unit/infra/root"
+state_file: "%{cwd}/state/root.tfstate"
+vars:
+  region: "%{hiera('region')}"
+
+  delegated_domain_name: "%{hiera('delegated_domain_name')}"
